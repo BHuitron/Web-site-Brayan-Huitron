@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1, sgrink-tofit=no">
+        <meta name="keywords" content="site informativo ">
+        <meta name="description" content="Site informativo">
+        <title> Web site informativo </title>
+        <!--Referencia Bootstrap CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+crossorigin="anonymous">
+        
+   <!--Referencia Bootstrap Bundle with Popper-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    
+  
+        <!--referencia a hoja de estilo-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--agregar un favicon-->
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <!--referencia de framework fontawesome-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" 
+     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+         <!--referencia de fuentes de google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Losa+de+Roboto|Pantalla+Playfair">
+    
+<script type="text/javascript" src="js/login.js"></script>
+
+    </head> <!--inicia metadatos-->
+    <body>
+       <!--aquí iniica el código visible para el usuario-->
+       <header class="header"> <!--inicia encabezado-->
+       <section class="header-top"><!--inicia barra superior-->
+       <div class="container">
+       <div class="row">
+       <div class="col-sm-12">
+       <div class="header-top-center">
+       <p>Inicia Sesión</p>
+           
+       </div>
+       </div>
+       </div>
+       </div>
+       </section> <!--termina barra superiro-->
+       <section><!--inicia barra logo - menú-->
+       <div class="container"><!--estructura el contenido de tabla-->
+       <div class="row"><!--estructura el contenido de fila-->
+       <article class="col-lg-3 col-md-6 col-sm-12"><!--inicia logo, columna 1-->
+       <div class="header-logo">
+       <a href="index.html"><img src="img/perfil.PNG" width="40%" alt=""></a> 
+       </div>
+       </article><!--termina logo-->
+       <article class="col-lg-6 col-md-6 col-sm-12"><!--inicia menu, columna2-->
+     
+      <nav class="navbar navbar-expand-lg navbar-dark p-4 mt-2 header-menu">
+      <div class="container-fluid justify-content-center">
+          <button class="navbar-toggler"type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <u1 class="navbar-nav me-auto mb-2 mb-1g-0">
+          <li class="nav-item aline">
+            <a class="nav-link active" aria-current="page"  href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Experiencia laboral</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">inicio de sesión</a>
+          </li>
+          </div>
+          </div>
+          </nav>
+          
+
+       
+       </article><!--termina menu, columna 2-->
+       <article class="col-lg-3 col-md-12 col-sm-12n d-sm-none dmd-none d-lg-block"><!--inicia liga de iconos, columna 3-->
+            <div class="header-nav-option">
+       <a href="#"><img src="img/fant.jpg"alt=""></a>
+       <a href="#"><img src="img/c.jpg"alt=""></a>
+       <a href="#"><img src="img/b.jpg"alt=""> <span>0</span></a>
+       </div>
+       </article><!--termina liga de iconos, columna 3-->
+       </div><!--termina estructura de fila -->
+       </div><!--termina estructura de tabla-->
+       </section><!--termina barra logo - menu-->
+       </header> <!--termina encabezado--> 
+       
+        <main class="form-signin"><!--inicia contenido principal-->
+       <div class="container">
+       <div class="row">
+       <section class="col-lg-6 col-md-12" id="section1">
+        <form action="procesa_sesion.php"id="formulario" method="post">
+            <div class="mb-3">
+    <h1 class="h3 mb-3 fw-normal">Inicia Sesión</h1>
+    <label for="inputEmail" class="visually-hidden">Correo Electronico</label>
+    <input type="email" id="email" class="form-control" placeholder="Correo Electronico" required autofocus name="email">
+    </div>
+      <div class="mb-3">
+    <label for="inputPassword" class="visually-hidden">Contraseña</label>
+    <input type="password" id="pwd" class="form-control" placeholder="Contraseña" required name="password">
+    </div>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+      
+    </div>
+   <span id="error"></span></p>
+    <button class="w-100 btn btn-lg btn-primary" id="iniciar" type="button"> Ingresar</button>
+       </section>
+       </form>       
+      
+      
+    <section class="col-lg-6 col-md-12" id="section2">
+    <div class="container">
+    <div class="row">
+    <form action="procesa_registro.php" method="get">
+    <div class="mb-3">
+    <h1 class="h3 mb-3 fw-normal">Formulario de contacto al Desarrollador</h1>
+    <label for="inputCorreo Electronico" class="visually-hidden">Correo Electronico</label>
+    <input type="Correo Electronico" id="inputCorreo Electronico" class="form-control" placeholder="Correo Electronico" required autofocus name="email">
+    </div>
+        <div class="mb-3">  
+    <div class="row">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Modelo" name="modelo">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Empresa" aria-label="Servicio" name="servicio">
+  </div>
+</div>
+</div>
+ <div class="mb-3">
+    <label for="inputTelefono" class="visually-hidden">Telefono</label>
+    <input type="Telefono" id="inputTelefono" class="form-control" placeholder="Telefono" required autofocus name="telefono">
+    </div>
+        <div class="mb-3">  
+    <div class="row">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Contraseña" aria-label="Contraseña" name="contraseña">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Confirmar Contraseña" aria-label="Confirmar Contraseña" name="contraseña2">
+  </div>
+</div>
+</div>
+   <button class="w-100 btn btn-lg btn-primary" type="submit"> Enviar</button>
+       </section>
+       </form>       
+
+      
+       
+     </main><!--termina contenido principal-->
+       <footer><!--inicia pie de pagina-->
+           <h3>Sígueme</h3>
+           <span>
+               <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><img src="img/letra.jpg"alt=""></a>
+           </span>
+       </footer><!--termina pie de pagina-->
+    </body>
+</html>

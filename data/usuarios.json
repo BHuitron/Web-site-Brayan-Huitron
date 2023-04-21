@@ -1,0 +1,62 @@
+{
+  "usuarios":[
+        {
+          "correo":"alfredo@gmail.com",
+          "pwd": "alfredo",
+          "pedidos":[
+                      {
+                      "numero":"Lavado de motor", 
+                       "fecha":"ibiza", 
+                       "total":"26/04/21", 
+                       "estatus":"$1850.00"
+                      },
+                      {
+                      "numero":"Lavado de interiores", 
+                       "fecha":"ibiza", 
+                       "total":"26/04/21", 
+                       "estatus":"$999.03"
+                      }, 
+                      {
+                      "numero":"lavado de rin", 
+                       "fecha":"ibiza", 
+                       "total":"26/04/21", 
+                       "estatus":"$1389.02"
+                      }
+                    ]
+         
+          
+        }, 
+        {
+          "correo":"javier@gmail.com",
+          "pwd": "javier",
+          "pedidos":[
+                      {
+                      "numero":"Espuma activa", 
+                       "fecha":"BMW", 
+                       "total":"24/04/21", 
+                       "estatus":"$499.30"
+                      },
+                      {
+                      "numero":"Protección al Cuero", 
+                       "fecha":"BMW", 
+                       "total":"24/04/21", 
+                       "estatus":"$389.80"
+                      }, 
+                      {
+                      "numero":"Lavado de rin", 
+                       "fecha":"BMW", 
+                       "total":"24/04/21", 
+                       "estatus":"$1389.02"
+                      }, 
+                      {
+                      "numero":"Polish", 
+                       "fecha":"BMW", 
+                       "total":"24/04/21", 
+                       "estatus":"$655.35"
+                      }
+                    ]
+         
+          
+        }
+  ]
+}
